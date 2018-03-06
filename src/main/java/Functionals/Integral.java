@@ -18,9 +18,9 @@ public class Integral implements Functional {
         if(a<f.getLowerLimit()||b>f.getUpperLimit()){
             throw new IllegalArgumentException("Область определения функции не содержится в [a; b]");
         }
-        double sum = 0, d = (b - a) / N;
-        for (double x = a + d/2; x < b; x += d)
-            sum += f.calculation(x) * d;
+        double sum = 0, h = (b - a) / N;
+        for (double x = a + h/2; x < b; x += h)
+            sum += f.calculation(x) * h;
         return sum;
     }
 }
