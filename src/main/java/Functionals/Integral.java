@@ -7,7 +7,7 @@ public class Integral implements Functional {
 
     private double a;
     private double b;
-    private static final int N = 1500;
+    private static final int N = 30000;
 
     public Integral( double a, double b){
         this.a = a;

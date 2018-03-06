@@ -25,11 +25,11 @@ public class IntegralTest {
 
     @Test
     public void IntegralOfSinFunction() throws Exception {
-        Integral I = new Integral(0.,2*Math.PI);
+        Integral I = new Integral(0.,Math.PI);
         SinFunction f = new SinFunction();
         f.setLimits(0.,10.);
         f.setCoefficients(1., 1.);
-        double y = 0.;
+        double y = 2.;
         assertEquals(y, I.calculate(f), DELTA);
     }
 
